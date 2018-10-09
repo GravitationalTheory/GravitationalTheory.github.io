@@ -2,13 +2,15 @@
 <html>
 
 <head>
-<title>Starting page</title>
+<title>Welcome page</title>
 
 <style>
+/* setup rescalable window */
 body, html {
     height: 100%;
     margin: 0;
 }
+/* setup backgroud image */
 .back_image {
     background-image: url("images/main.jpg");
     height: 100%; 
@@ -17,11 +19,14 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* setum link images */
 div.one{
     position: absolute;
-    left: 250px;
-    top: 250px;
-    padding: 1px 1px 1px 1px;
+    left: 25%;
+    top: 40%;
+    width: 10%;
+    height: 20%;
+    padding: 1px 1px 1% 1px;
     border: 1px solid #BFBFBF;
     background-color: white;
     box-shadow: 1px 1px 1px #aaaaaa;
@@ -30,9 +35,11 @@ div.one{
 }
 div.two{
     position: absolute;
-    left: 360px;
-    top: 250px;
-    padding: 1px 1px 1px 1px;
+    left: 36%;
+    top: 40%;
+    width: 10%;
+    height: 20%;
+    padding: 1px 1px 1% 1px;
     border: 1px solid #BFBFBF;
     background-color: white;
     box-shadow: 1px 1px 1px #aaaaaa;
@@ -41,9 +48,11 @@ div.two{
 }
 div.tree{
     position: absolute;
-    left: 470px;
-    top: 250px;
-    padding: 1px 1px 1px 1px;
+    left: 47%;
+    top: 40%;
+    width: 10%;
+    height: 20%;
+    padding: 1px 1px 1% 1px;
     border: 1px solid #BFBFBF;
     background-color: white;
     box-shadow: 1px 1px 1px #aaaaaa;
@@ -56,25 +65,46 @@ div.container {
   font-family: "Times New Roman", Times, monospace;
   padding: 1px;
 }
+/* setup image opacity */
+img {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+/*setup image link wisual options */
+a:link {
+    color: black;
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
 </style>
 </head>
 
 <body>
   
 <div class="back_image"></div>
-  
+
 <div class=one>
-    <img src="images/master.jpg" alt="bb" width="100" height="100">
-        <div class="container">About myself</div>  
+  <a href="my.html">
+    <img src="images/master.jpg" alt="bb" width="100%">
+        <div class="container">About myself</div>
+  </a>
 </div>
 
 <div class=two>
-    <img src="images/scientists.jpg" alt="cc" width="100" height="100">
+    <img src="images/scientists.jpg" alt="cc" width="100%">
         <div class="container">Scientists</div> 
 </div>
 
 <div class=tree>
-    <img src="images/gravity.jpg" alt="bb" width="100" height="100">
+    <img src="images/gravity.jpg" alt="bb" width="100%">
         <div class="container">Gravity</div>
 </div>
 
