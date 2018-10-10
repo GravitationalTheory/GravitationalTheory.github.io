@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Hendrik Lorentz</title>
+</head>
+
+/* setup script to write mathematical equations using LaTex language */
+<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "AMS"} } });</script>
+
+<style>
+.back_image {
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: 100%;
+    background-image: url("images/space.jpg");
+			
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+			
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+}		
+#page-wrap {
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+    padding: 10px;
+    background: white;
+    box-shadow: 0 0 50px black;
+}
+/* setup css title text */
+.title_text {
+    font-family: Gill Sans, Verdana; /* setup fonts family */
+    font-size: 20px; /* setup font size */
+    line-height: 10px; /* setup distance between two text lines */
+    letter-spacing: 2px; /* setup space between letters in text */
+    font-weight: bold; /* setup font weight */
+    margin-left: 50px; /* setup left margin */
+}
+.title_sub_text {
+    font-family: Gill Sans, Verdana; /* setup fonts family */
+    font-size: 15px; /* setup font size */
+    line-height: 10px; /* setup distance between two text lines */
+    letter-spacing: 2px; /* setup space between letters in text */
+    margin-left: 50px; /* setup left margin */
+}
+.contents_text {
+    font-family: "Lucida Grande", Tahoma; /* setup fonts family */
+    font-size: 15px; /* setup font size */
+    line-height: 20px; /* setup distance between two text lines */
+    letter-spacing: 1px; /* setup space between letters in text */
+    font-weight: lighter; /* setup font weight */
+    color: #666666; /* setup font color */
+    margin-top: 20px; /* setup space from previous text */
+    margin-left: 50px; /* setup left margin */
+	margin-right: 50px; /* setup right margin */
+}
+img {
+    position: relative; /* The element is positioned relative to its normal position */
+    width: 40%; /* setup width of the image */
+    float: right; /* setup position to the right */
+    padding: 10px 10px 10px 10px; /* setup space betwen image and text in order: top, right, bottom, left */
+    right: 50px; /* setup right margin */
+    margin: 1px 20px;
+}
+/* setup margin for numbering equations */
+.number {
+    margin-right: 50px; /* setup right margin */
+}
+</style>
+<body>
+    
+<div class="back_image"></div>
+
+<div id="page-wrap">
+<p class=title_text>Hendrik Lorentz</p>
+<p class=title_sub_text>18 July March 1853 – 4 February 1928</p>
+<p class=title_sub_text>Creator of: Lorentz transformation</p>
+</div>
+
+<div id="page-wrap">
+<p class=title_text>Lorentz transformation</p>
+<img src="images/transformation.png"/>
+<p class=contents_text>Let's say we have two systems <b>S</b> and <b>S'</b>. The system <b>S'</b> is moving at a speed <b>V<sub>x</sub></b>
+    in relation to the system <b>S</b>. Observer in the each systems is going to define position of the object.
+    From <b>S</b> perspective object has position <b>(x,y,z,ct)</b> while from <b>S'</b> perspective <b>(x',y',z',ct')</b>.
+    To know how the coordinates being transferred between systems we need to find linear transformation because
+    movement is without acceleration. In this case:</p>
+<p>\begin{eqnarray}x' = ax + bt\end{eqnarray}</p><p>\begin{eqnarray}x = a'x' + b't'\end{eqnarray}</p>
+<p class=contents_text>Where <b>a,b,a',b'</b> are constants that we need to find.
+    Beginning of the <b>S'(x' = 0)</b> <br> system in <b>S</b> system is moving with velocity <b>V</b> then:</p>
+<p>$$0 = ax + bt \quad \Rightarrow \quad b = -a\frac{x}{t} = -av $$</p>
+<p class=contents_text>Seting this result to the (1) equation, and knowing that system <b>S</b> is moving from system <b>S'</b>
+    with velocity <b>-V</b>, we get:</p>
+<p class=number>\begin{equation} x' = a(x - vt)\end{equation}</p>
+<p class=number>\begin{equation} x = a'(x' + vt')\end{equation}</p>
+<p class=contents_text>Both systems are symmetrical, then <b>a = a'</b></p>
+<p class=contents_text>Let's send both light signal from each system from its beginning <b>x=x'=0</b> in the same time <b>t=t'=0</b>.
+    For light speed <b>c</b> we get:</p>
+<p class=number>\begin{equation} x' = ct'\end{equation}</p>
+<p class=number>\begin{equation} x = ct\end{equation}</p>
+<p class=contents_text>Substituting now equations (5) and (6) to (3) and (4), we get:</p>
+<p class=number>\begin{equation} ct' = a(ct - vt) \end{equation}</p>
+<p class=number>\begin{equation} ct = a(ct' - vt') \end{equation}</p>
+<p class=contents_text>Multiplying equations (7) and (8) by parties, we get:</p>
+<p>$$c^{2}tt' = a^{2}tt'(c^{2} - v^{2}) $$</p>
+<p>$$ \Rightarrow a^{2} =\frac{c^{2}}{c^{2}-v^{2}} $$</p>
+<p class=number>\begin{equation} \Rightarrow a = \frac{1}{\sqrt{1-\frac{v^{2}}{c^{2}}}} \end{equation}</p>
+<p class=contents_text>Now we can write transformation equations for <b>x</b> and <b>x'</b> coordinates:</p>
+<p>$$ x' = \frac{x - vt}{\sqrt{1-\frac{v^{2}}{c^{2}}}} $$</p>
+<p>$$ x = \frac{x' + vt'}{\sqrt{1-\frac{v^{2}}{c^{2}}}} $$</p>
+<p class=contents_text>To get time transformation we starting from equation (4) and transform to get <b>t'</b>:</p>
+<p>$$ t' = \frac{x}{av} - \frac{x'}{v} $$</p>
+<p class=contents_text>Now we insert value <b>x'</b> from equation (3):</p>
+<p>$$ t' = \frac{x}{av} - \frac{a^{2}(x-vt)}{av} $$</p>
+<p>$$ \Rightarrow t' = \frac{a^{2}vt}{av} + \frac{x(1-a^{2})}{av} $$</p>
+<p class=contents_text>Now inserting value <b>a</b> from equation (9) and after several transformations we get:</p>
+<p>$$ t' = \frac{vt + x(1-\frac{v^{2}}{c^{2}}) - x}{v\sqrt{1-\frac{v^{2}}{c^{2}}}}$$</p>
+<p>$$ \Rightarrow t' = \frac{t - x\frac{v}{c^{2}}}{\sqrt{1-\frac{v^{2}}{c^{2}}}}$$</p>
+<p class=contents_text>Both systems move in relation to the coordinates <b>x</b>, so the coordinates <b>z</b> and <b>y</b> are not transformed.
+    All transformed coordinates are given below:</p>
+<p class=number>\begin{equation} x' = \frac{x - vt}{\sqrt{1-\frac{v^{2}}{c^{2}}}} \quad x = \frac{x' + vt'}{\sqrt{1-\frac{v^{2}}{c^{2}}}} \end{equation}</p>
+<p>$$ y' = y \quad y = y'$$</p>
+<p>$$ z' = z \quad z = z' $$</p>
+<p class=number>\begin{equation} t' = \frac{t - x\frac{v}{c^{2}}}{\sqrt{1-\frac{v^{2}}{c^{2}}}}  \quad
+    t = \frac{t' + x'\frac{v}{c^{2}}}{\sqrt{1-\frac{v^{2}}{c^{2}}}}  \end{equation}</p>
+</div>
+
+<div id="page-wrap">
+<p class=title_text>Relativistic velocities adding</p>
+<img src="images/velocities_adding.png"/>
+<p class=contents_text>Let say that we observing object that is moving with his own velocity in another system.
+    We are staying in <b>S</b> system, the object and his system <b>S'</b> are moving away with velocity <b>V</b> from <b>S</b> system.
+    Object it self is moving with another velocity <b>u'</b> from <b>S'</b> system. Using Lorentz transformations
+    (10) and (11) we define velocity <b>u'</b> of the moving object in <b>S'</b> system as:</p>
+<p>$$ u' = \frac{x'}{t'} = \frac{\frac{x - vt}{\sqrt{1-\frac{v^{2}}{c^{2}}}} }{\frac{t -
+    x\frac{v}{c^{2}}}{\sqrt{1-\frac{v^{2}}{c^{2}}}}} = \frac{x - vt}{t - x\frac{v}{c^{2}}} \quad /t$$</p>
+<p class=number>\begin{equation} \Rightarrow u' = \frac{\frac{x}{t} - v}{1 - \frac{x}{t}\frac{v}{c^{2}}} = \frac{u - v}{1 - u\frac{v}{c^{2}}} \end{equation}</p>
+<p class=contents_text>To get velocity of the object from <b>S</b> system frame, we need to transform above equation:</p>
+<p>$$ u - v = u'(1 - u\frac{v}{c^{2}}) $$</p>
+<p>$$ \Rightarrow u(u'\frac{v}{c^{2}} + 1) = u' + v$$</p>
+<p class=number>\begin{equation} u = \frac{u' + v}{u'\frac{v}{c^{2}} + 1} \end{equation}</p>
+</div>
+
+<div id="page-wrap">
+<p class=title_text>Example</p>
+<img src="images/velocities_adding.png"/>
+<p class=contents_text>Two spaceships flying from each other in opposite directions with the same  0.9 light speed. What is
+    the speed of one spaceship in term of second one. To calculate this we use (12) equation and put <b>v = 0.9 c</b> and
+<b>u = -0.9 c</b> ( <b>"-"</b> indicates that velocity direction of one spaceship is opposite to the reference frame).</p>
+<p>$$ \Delta u' = \frac{u - v}{1 - u\frac{v}{c^{2}}} = \frac{-0.9 - 0.9}{1 + 0.9\frac{0.9}{1^{2}}} = \frac{-1.8}{1.81} < |-1|c$$</p>
+<p class=contents_text>Second spaceship is moving away from first one with absolute speed less then speed of light.</p>
+</div>
+
+<div id="page-wrap">
+<p class=title_text>Length contraction</p>
+<img src="images/length_contraction.png"/>
+
+</div>
+
+
+</body>
+</thml>
