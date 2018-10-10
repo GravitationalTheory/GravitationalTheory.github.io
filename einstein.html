@@ -30,7 +30,7 @@
     position: relative;
     width: 80%;
     margin: 50px auto;
-    padding: 10px;
+    padding: 20px;
     background: white;
     box-shadow: 0 0 50px black;
 }
@@ -53,7 +53,7 @@
 .contents_text {
     font-family: "Lucida Grande", Tahoma; /* setup fonts family */
     font-size: 15px; /* setup font size */
-    line-height: 20px; /* setup distance between two text lines */
+    line-height: 30px; /* setup distance between two text lines */
     letter-spacing: 1px; /* setup space between letters in text */
     font-weight: lighter; /* setup font weight */
     color: #666666; /* setup font color */
@@ -63,15 +63,32 @@
 }
 img {
     position: relative; /* The element is positioned relative to its normal position */
-    width: 40%; /* setup width of the image */
+    width: 50%; /* setup width of the image */
     float: right; /* setup position to the right */
-    padding: 10px 10px 10px 10px; /* setup space betwen image and text in order: top, right, bottom, left */
-    right: 50px; /* setup right margin */
+    padding: 10px 10px 10px 40px; /* setup space betwen image and text in order: top, right, bottom, left */
+    right: 20px; /* setup right margin */
     margin: 1px 20px;
 }
 /* setup margin for numbering equations */
 .number {
     margin-right: 50px; /* setup right margin */
+}
+.button {
+    background-color: #eee; 
+    border: 1px solid #008CBA; /* button border color */
+    color: black; /* text color */
+    padding: 10px 10px; /* space around text */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border-radius: 5px;
+	margin-left: 50px; /* setup left margin */
+	border-bottom-width: 2px;
+}
+.button:hover {
+    background-color: #008CBA;
+    color: white;
 }
 </style>
 <body>
@@ -85,6 +102,13 @@ img {
 </div>
 
 <div id="page-wrap">
+<a href="#time_dilatation" class=button>Time dilatation</a>
+<a href="#time_dilatation_example" class=button>Time dilatation example</a>
+</div>
+
+<div id="page-wrap">
+<br id=time_dilatation>
+&nbsp
 <p class=title_text>Time dilatation</p>
 <img src="images/time-dilatation.png"/>
 <p class=contents_text>Let's say we have two systems S and S'. The system S' is moving at a speed V<sub>x</sub>
@@ -112,6 +136,8 @@ img {
 </div>
 
 <div id="page-wrap">
+<br id=time_dilatation_example>
+&nbsp
 <p class=title_text>Time dilatation example</p>
 <p class=contents_text>Let say you stand next to the road observing autos. After one of them is passing you with speed of
     120 km/h you have been wondering how much time those people save. In this case you staying in S system, and the
