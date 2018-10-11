@@ -1,0 +1,96 @@
+.back_image {
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: 100%;
+    background-image: url("images/space.jpg");
+			
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+			
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+}		
+#page-wrap {
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 50px black;
+}
+/* setup css title text */
+.title_text {
+    font-family: Gill Sans, Verdana; /* setup fonts family */
+    font-size: 20px; /* setup font size */
+    line-height: 10px; /* setup distance between two text lines */
+    letter-spacing: 2px; /* setup space between letters in text */
+    font-weight: bold; /* setup font weight */
+    margin-left: 50px; /* setup left margin */
+}
+.title_sub_text {
+    font-family: Gill Sans, Verdana; /* setup fonts family */
+    font-size: 15px; /* setup font size */
+    line-height: 10px; /* setup distance between two text lines */
+    letter-spacing: 2px; /* setup space between letters in text */
+    margin-left: 50px; /* setup left margin */
+}
+.contents_text {
+    font-family: "Lucida Grande", Tahoma; /* setup fonts family */
+    font-size: 15px; /* setup font size */
+    line-height: 30px; /* setup distance between two text lines */
+    letter-spacing: 1px; /* setup space between letters in text */
+    font-weight: lighter; /* setup font weight */
+    color: #666666; /* setup font color */
+    margin-top: 20px; /* setup space from previous text */
+    margin-left: 50px; /* setup left margin */
+	margin-right: 50px; /* setup right margin */
+}
+img {
+    position: relative; /* The element is positioned relative to its normal position */
+    width: 50%; /* setup width of the image */
+    float: right; /* setup position to the right */
+    padding: 10px 10px 10px 40px; /* setup space betwen image and text in order: top, right, bottom, left */
+    right: 20px; /* setup right margin */
+    margin: 1px 20px;
+}
+/* setup margin for numbering equations */
+.number {
+    margin-right: 50px; /* setup right margin */
+}
+/* setup navigation button */
+.button {
+    background-color: #eee; 
+    border: 1px solid #008CBA; /* button border color */
+    color: black; /* text color */
+    padding: 10px 10px; /* space around text */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border-radius: 5px;
+	margin-left: 50px; /* setup left margin */
+	margin-bottom: 10px;
+	border-bottom-width: 2px;
+}
+.button:hover {
+    background-color: #008CBA;
+    color: white;
+}
+/*setup image link wisual options */
+a:link {
+    color: black;
+	font-weight: bold; /* setup font weight */
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+	font-weight: bold; /* setup font weight */
+    text-decoration: none;
+}
+i {
+	font-family: "Noto Sans", sans-serif; /* setup fonts family */
+	color: black; /* setup font color */
+}

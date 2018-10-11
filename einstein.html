@@ -5,103 +5,13 @@
 <title>Albert Einstein</title>
 </head>
 
+<link rel="stylesheet" type="text/css" href="webstyle.css">
+
 /* setup script to write mathematical equations using LaTex language */
 <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 <script>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
 <script type="text/x-mathjax-config">MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "AMS"} } });</script>
 
-<style>
-.back_image {
-	/* Set rules to fill background */
-	min-height: 100%;
-	min-width: 100%;
-    background-image: url("images/space.jpg");
-			
-	/* Set up proportionate scaling */
-	width: 100%;
-	height: auto;
-			
-	/* Set up positioning */
-	position: fixed;
-	top: 0;
-	left: 0;
-}		
-#page-wrap {
-    position: relative;
-    width: 80%;
-    margin: 50px auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 0 50px black;
-}
-/* setup css title text */
-.title_text {
-    font-family: Gill Sans, Verdana; /* setup fonts family */
-    font-size: 20px; /* setup font size */
-    line-height: 10px; /* setup distance between two text lines */
-    letter-spacing: 2px; /* setup space between letters in text */
-    font-weight: bold; /* setup font weight */
-    margin-left: 50px; /* setup left margin */
-}
-.title_sub_text {
-    font-family: Gill Sans, Verdana; /* setup fonts family */
-    font-size: 15px; /* setup font size */
-    line-height: 10px; /* setup distance between two text lines */
-    letter-spacing: 2px; /* setup space between letters in text */
-    margin-left: 50px; /* setup left margin */
-}
-.contents_text {
-    font-family: "Lucida Grande", Tahoma; /* setup fonts family */
-    font-size: 15px; /* setup font size */
-    line-height: 30px; /* setup distance between two text lines */
-    letter-spacing: 1px; /* setup space between letters in text */
-    font-weight: lighter; /* setup font weight */
-    color: #666666; /* setup font color */
-    margin-top: 20px; /* setup space from previous text */
-    margin-left: 50px; /* setup left margin */
-	margin-right: 50px; /* setup right margin */
-}
-img {
-    position: relative; /* The element is positioned relative to its normal position */
-    width: 50%; /* setup width of the image */
-    float: right; /* setup position to the right */
-    padding: 10px 10px 10px 40px; /* setup space betwen image and text in order: top, right, bottom, left */
-    right: 20px; /* setup right margin */
-    margin: 1px 20px;
-}
-/* setup margin for numbering equations */
-.number {
-    margin-right: 50px; /* setup right margin */
-}
-.button {
-    background-color: #eee; 
-    border: 1px solid #008CBA; /* button border color */
-    color: black; /* text color */
-    padding: 10px 10px; /* space around text */
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-	border-radius: 5px;
-	margin-left: 50px; /* setup left margin */
-	border-bottom-width: 2px;
-}
-.button:hover {
-    background-color: #008CBA;
-    color: white;
-}
-/*setup image link wisual options */
-a:link {
-    color: black;
-	font-weight: bold; /* setup font weight */
-    text-decoration: none;
-}
-a:visited {
-    color: black;
-	font-weight: bold; /* setup font weight */
-    text-decoration: none;
-}
-</style>
 <body>
     
 <div class="back_image"></div>
@@ -122,25 +32,25 @@ a:visited {
 &nbsp
 <p class=title_text>Time dilatation</p>
 <img src="images/time-dilatation.png"/>
-<p class=contents_text>Let's say we have two systems S and S'. The system S' is moving at a speed V<sub>x</sub>
-    in relation to the system S. Observer in the each systems is going to define position of the moving object.
-    Object in S' system is moving up and then is falls down. The starting position is (x<sub>1</sub>',y<sub>1</sub>'
-    ,z<sub>1</sub>',ct<sub>1</sub>'),after object get to the maximum top position (y'<sub>max</sub>) he falls down to the
-    end position (x<sub>2</sub>',y<sub>2</sub>',z<sub>2</sub>',ct<sub>2</sub>'). From system S perspective starting and
-    ending position is set by <a href="lorentz.html">Lorentz transformation</a>:</p>
+<p class=contents_text>Let's say we have two systems <i>S</i> and <i>S'</i>. The system <i>S'</i> is moving at a speed <i>V<sub>x</sub></i>
+    in relation to the system <i>S</i>. Observer in the each systems is going to define position of the moving object.
+    Object in <i>S'</i> system is moving up and then is falls down. The starting position is <i>(x<sub>1</sub>',y<sub>1</sub>'
+    ,z<sub>1</sub>',ct<sub>1</sub>')</i>,after object get to the maximum top position <i>(y'<sub>max</sub>)</i> he falls down to the
+    end position <i>(x<sub>2</sub>',y<sub>2</sub>',z<sub>2</sub>',ct<sub>2</sub>')</i>. From system <i>S</i> perspective starting and
+    ending position is set by <a href="lorentz.html#lorentz_transformation">Lorentz transformation</a>:</p>
 <p class=number>\begin{equation} x_{1} = \frac{x_{1}' + vt_{1}'}{\sqrt{1-\frac{v^{2}}{c^{2}}}} \quad x_{2} =
     \frac{x_{2}' + vt_{2}'}{\sqrt{1-\frac{v^{2}}{c^{2}}}} \end{equation}</p>
 <p class=contents_text>Taking into account the sequence of events:</p>
 <p>$$ t_{2}' > t_{1}'$$</p>
 <p class=contents_text>From here we get:</p>
 <p>$$ x_{2}' > x_{1}'$$</p>
-<p class=contents_text>This result is interpreted as from S system observer see object going up in place x<sub>1</sub> and
-    falling dow in another place x<sub>2</sub>,what is show on the picture.</p>    
+<p class=contents_text>This result is interpreted as from <i>S</i> system observer see object going up in place <i>x<sub>1</sub></i> and
+    falling dow in another place <i>x<sub>2</sub></i>,what is show on the picture.</p>    
 <p class=contents_text>When is going to time of the events, they transform according to Lorentz transformation:</p>  
 <p class=number>\begin{equation} t_{1} = \frac{t_{1}' + x_{1}'\frac{v}{c^{2}}}{\sqrt{1-\frac{v^{2}}{c^{2}}}}  \quad
     t_{2} = \frac{t_{2}' + x_{2}'\frac{v}{c^{2}}}{\sqrt{1-\frac{v^{2}}{c^{2}}}}  \end{equation}</p>
-<p class=contents_text>To compare durations of the event in both systems we simply subtract time t<sub>2</sub> from
-    time t<sub>1</sub>:</p>
+<p class=contents_text>To compare durations of the event in both systems we simply subtract time <i>t<sub>2</sub></i> from
+    time <i>t<sub>1</sub></i>:</p>
 <p>$$ \Delta t = t_{2} - t_{1} = \frac{t_{2}' + x_{2}'\frac{v}{c^{2}} - t_{1}' - x_{1}'\frac{v}{c^{2}}}{\sqrt{1-\frac{v^{2}}{c^{2}}}}$$</p>
 <p class=contents_text>After reduction we finally get equation for time dilatation:</p>
 <p class=number>\begin{equation} \Delta t = \frac{t_{2}' - t_{1}'}{\sqrt{1-\frac{v^{2}}{c^{2}}}} = \frac{\Delta t'}{\sqrt{1-\frac{v^{2}}{c^{2}}}}\end{equation}</p>   
@@ -151,8 +61,8 @@ a:visited {
 &nbsp
 <p class=title_text>Time dilatation example</p>
 <p class=contents_text>Let say you stand next to the road observing autos. After one of them is passing you with speed of
-    120 km/h you have been wondering how much time those people save. In this case you staying in S system, and the
-    people are moving with car in the S' system. Now we will compare flow of time in your surroundings (t) and in the car surroundings (t'):</p>
+    120 km/h you have been wondering how much time those people save. In this case you staying in <i>S</i> system, and the
+    people are moving with car in the <i>S'</i> system. Now we will compare flow of time in your surroundings <i>t</i> and in the car surroundings <i>t'</i>:</p>
 <p>$$V = 120 \frac{km}{h} = \frac{1}{30} \frac{km}{s} \quad ; \quad c = 3 \cdot 10^{5} \frac{km}{s}$$</p>
 <p>$$ \Delta t = \frac{\Delta t'}{\sqrt{1-\frac{(\frac{1}{30})^{2}}{(3 \cdot 10^{5})^{2}}}} =
     \frac{\Delta t'}{\sqrt{1-\frac{1}{81} \cdot 10^{-12}}} \approx \frac{\Delta t'}{0.9999999999999938}$$</p>
@@ -171,11 +81,8 @@ a:visited {
 <p>$$saved \quad time = \Delta t - \Delta t' = 390290894.2662463s \approx 12.4 years $$</p>
 <p class=contents_text>That means when we go back from space mowing with 0.5 speed of light to earth, then we will have
     80 years but people on earth will be 92.4 years old. This is the real travel to the future!</p>
-    
 
 </div>
-
-
 
 </body>
 </thml>
