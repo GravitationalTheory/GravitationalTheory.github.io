@@ -3,68 +3,90 @@
 <head>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<style type="text/css">
+<link rel="stylesheet" type="text/css" href="webstyle2.css">
 
 
-.label-container{
-	position:fixed;
-	bottom:48px;
-	right:105px;
-	display:table;
-	visibility: hidden;
-}
+/* setup script to write mathematical equations using LaTex language */
+<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "AMS"} } });</script>
 
-.label-text{
-	color:#FFF;
-	background:rgba(51,51,51,0.5);
-	display:table-cell;
-	vertical-align:middle;
-	padding:10px;
-	border-radius:3px;
-}
 
-.label-arrow{
-	display:table-cell;
-	vertical-align:middle;
-	color:#333;
-	opacity:0.5;
-}
-
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#06C;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-	box-shadow: 2px 2px 3px #999;
-}
-
-.my-float{
-	font-size:24px;
-	margin-top:18px;
-}
-
-a.float + div.label-container {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s ease;
-}
-
-a.float:hover + div.label-container{
-  visibility: visible;
-  opacity: 1;
-}
-
-</style>
 </head>
 <body>
+	
+<div class="back_image"></div>
+	
+<br id=lorentz_transformation>
 
 
-<a href="#" class="float">
+<div id="page-wrap">
+<p class=title_text>Hendrik Lorentz</p>
+<p class=title_sub_text>18 July 1853 – 4 February 1928</p>
+<p class=title_sub_text>Creator of: Lorentz Transformation</p>
+</div>
+
+<div id="page-wrap">
+<a href="#lorentz_transformation" class=button>Lorentz transformation</a>
+<a href="#relativistic_velocities_adding" class=button>Relativistic velocities adding</a>
+<a href="#velocities_adding_example" class=button>Velocities adding example</a>
+<a href="#length_contraction" class=button>Length contraction</a>
+<a href="#length_contraction_example" class=button>Length contraction example</a>
+</div>
+
+<div id="page-wrap">
+<br id=lorentz_transformation>
+&nbsp
+<p class=title_text>Lorentz transformation</p>
+<img src="images/transformation.png"/>
+<p class=contents_text>Let's say we have two systems <i>S</i> and <i>S'</i>. The system <i>S'</i> is moving at a speed <i>V<sub>x</sub></i>
+    in relation to the system <i>S</i>. Observer in the each systems is going to define position of the object.
+    From <i>S</i> perspective object has position <i>(x,y,z,ct)</i> while from <i>S'</i> perspective <i>(x',y',z',ct')</i>.
+    To know how the coordinates being transferred between systems we need to find linear transformation because
+    movement is without acceleration. In this case:</p>
+<p class=number>\begin{equation}x' = ax + bt\end{equation}</p>
+<p class=number>\begin{equation}x = a'x' + b't'\end{equation}</p>
+<p class=contents_text>Where <i>a,b,a',b'</i> are constants that we need to find.
+    Beginning of the <i>S'(x' = 0)</i> <br> system in <i>S</i> system is moving with velocity <i>V</i> then:</p>
+<p>$$0 = ax + bt \quad \Rightarrow \quad b = -a\frac{x}{t} = -av $$</p>
+<p class=contents_text>Seting this result to the (1) equation, and knowing that system <i>S</i> is moving from system <i>S'</i>
+    with velocity <i>-V</i>, we get:</p>
+<p class=number>\begin{equation} x' = a(x - vt)\end{equation}</p>
+<p class=number>\begin{equation} x = a'(x' + vt')\end{equation}</p>
+<p class=contents_text>Both systems are symmetrical, then <i>a = a'</i></p>
+<p class=contents_text>Let's send both light signal from each system from its beginning <i>x=x'=0</i> in the same time <i>t=t'=0</i>.
+    For light speed <i>c</i> we get:</p>
+<p class=number>\begin{equation} x' = ct'\end{equation}</p>
+<p class=number>\begin{equation} x = ct\end{equation}</p>
+<p class=contents_text>Substituting now equations (5) and (6) to (3) and (4), we get:</p>
+<p class=number>\begin{equation} ct' = a(ct - vt) \end{equation}</p>
+<p class=number>\begin{equation} ct = a(ct' - vt') \end{equation}</p>
+<p class=contents_text>Multiplying equations (7) and (8) by parties, we get:</p>
+<p>$$c^{2}tt' = a^{2}tt'(c^{2} - v^{2}) $$</p>
+<p>$$ \Rightarrow a^{2} =\frac{c^{2}}{c^{2}-v^{2}} $$</p>
+<p class=number>\begin{equation} \Rightarrow a = \frac{1}{\sqrt{1-\frac{v^{2}}{c^{2}}}} \end{equation}</p>
+<p class=contents_text>Now we can write transformation equations for <i>x</i> and <i>x'</i> coordinates:</p>
+<p>$$ x' = \frac{x - vt}{\sqrt{1-\frac{v^{2}}{c^{2}}}} $$</p>
+<p>$$ x = \frac{x' + vt'}{\sqrt{1-\frac{v^{2}}{c^{2}}}} $$</p>
+<p class=contents_text>To get time transformation we starting from equation (4) and transform to get <i>t'</i>:</p>
+<p>$$ t' = \frac{x}{av} - \frac{x'}{v} $$</p>
+<p class=contents_text>Now we insert value <i>x'</i> from equation (3):</p>
+<p>$$ t' = \frac{x}{av} - \frac{a^{2}(x-vt)}{av} $$</p>
+<p>$$ \Rightarrow t' = \frac{a^{2}vt}{av} + \frac{x(1-a^{2})}{av} $$</p>
+<p class=contents_text>Now inserting value <i>a</i> from equation (9) and after several transformations we get:</p>
+<p>$$ t' = \frac{vt + x(1-\frac{v^{2}}{c^{2}}) - x}{v\sqrt{1-\frac{v^{2}}{c^{2}}}}$$</p>
+<p>$$ \Rightarrow t' = \frac{t - x\frac{v}{c^{2}}}{\sqrt{1-\frac{v^{2}}{c^{2}}}}$$</p>
+<p class=contents_text>Both systems move in relation to the coordinates <i>x</i>, so the coordinates <i>z</i> and <i>y</i> are not transformed.
+    All transformed coordinates are given below:</p>
+<p class=number>\begin{equation} x' = \frac{x - vt}{\sqrt{1-\frac{v^{2}}{c^{2}}}} \quad x = \frac{x' + vt'}{\sqrt{1-\frac{v^{2}}{c^{2}}}} \end{equation}</p>
+<p>$$ y' = y \quad y = y'$$</p>
+<p>$$ z' = z \quad z = z' $$</p>
+<p class=number>\begin{equation} t' = \frac{t - x\frac{v}{c^{2}}}{\sqrt{1-\frac{v^{2}}{c^{2}}}}  \quad
+    t = \frac{t' + x'\frac{v}{c^{2}}}{\sqrt{1-\frac{v^{2}}{c^{2}}}}  \end{equation}</p>
+</div>
+
+
+<a href="#lorentz_transformation" class="float">
 <i class="fa fa-home my-float"></i>
 </a>
 <div class="label-container">

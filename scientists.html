@@ -3,54 +3,11 @@
 
 <head>
 <title>Scientists</title>
-
-<style>
-.back_image {
-	/* Set rules to fill background */
-	min-height: 100%;
-	min-width: 100%;
-    background-image: url("images/space.jpg");
-			
-	/* Set up proportionate scaling */
-	width: 100%;
-	height: auto;
-			
-	/* Set up positioning */
-	position: fixed;
-	top: 0;
-	left: 0;
-}		
-#page-wrap {
-    position: relative;
-    width: 80%;
-    margin: 50px auto;
-    padding: 10px;
-    background: white;
-    box-shadow: 0 0 50px black;
-}
-
-img {
-    opacity: 0.5;
-    filter:alpha(opacity=50);
-    }
-img:hover {
-    opacity: 1.0;
-    filter:alpha(opacity=100);
-}
-div.polaroid {
-  width: 30%;
-  height: 20%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-}
-div.container {
-  padding: 2px;
-  color: white;
-  text-shadow: 1px 1px 2px black;
-  font-size: 120%;
-}
-</style>
 </head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="webstyle.css">
+
 
 <body>
 
@@ -61,7 +18,7 @@ div.container {
   <tr>
     <th align="center">
         <div class="polaroid">
-            <a href="einstein.html"><img src="images/einstein.jpg" width=100%/></a>
+            <a href="einstein.html"><img src="images/einstein.jpg" width=100% class=gg/></a>
             <div class="container">
                 <p>Albert Einstein</p>
             </div>
@@ -86,6 +43,13 @@ div.container {
     <th>
   </tr>
 </table>
+
+<a href="index.html" class="float_home">
+<i class="fa fa-home my-float"></i>
+</a>
+<div class="label-container">
+<div class="label-text">Home</div>
+</div>
 
 </body>
 </thml>
