@@ -35,14 +35,14 @@ div.container {
   font-size: 120%;
 }
 div.polaroid img {
-		position: relative;
-		width: 100%;
+	position: relative;
+	width: 100%;
     opacity: 0.5;
-		padding: 0px 0px 0px 0px;
-		right: 0px;
-		margin: 0px 0px;
+	padding: 0px 0px 0px 0px;
+	right: 0px;
+	margin: 0px 0px;
     filter:alpha(opacity=50);
-    }
+}
 div.polaroid img:hover {
     opacity: 1.0;
     filter:alpha(opacity=100);
@@ -50,7 +50,7 @@ div.polaroid img:hover {
 /* setup css title text */
 .title_text {
     font-family: Gill Sans, Verdana; /* setup fonts family */
-    font-size: 20px; /* setup font size */
+    font-size: 22px; /* setup font size */
     line-height: 10px; /* setup distance between two text lines */
     letter-spacing: 2px; /* setup space between letters in text */
     font-weight: bold; /* setup font weight */
@@ -58,14 +58,14 @@ div.polaroid img:hover {
 }
 .title_sub_text {
     font-family: Gill Sans, Verdana; /* setup fonts family */
-    font-size: 15px; /* setup font size */
+    font-size: 18px; /* setup font size */
     line-height: 10px; /* setup distance between two text lines */
     letter-spacing: 2px; /* setup space between letters in text */
     margin-left: 50px; /* setup left margin */
 }
 .contents_text {
     font-family: "Lucida Grande", Tahoma; /* setup fonts family */
-    font-size: 15px; /* setup font size */
+    font-size: 18px; /* setup font size */
     line-height: 30px; /* setup distance between two text lines */
     letter-spacing: 1px; /* setup space between letters in text */
     font-weight: lighter; /* setup font weight */
@@ -84,11 +84,20 @@ img {
 }
 img.small {
     position: relative; /* The element is positioned relative to its normal position */
-    width: 20%; /* setup width of the image */
+    width: 10%; /* setup width of the image */
     float: right; /* setup position to the right */
     padding: 10px 10px 10px 40px; /* setup space betwen image and text in order: top, right, bottom, left */
     right: 20px; /* setup right margin */
     margin: 1px 20px;
+}
+/* rewrite above img settings for another use */
+img.large{
+	position: relative; /* The element is positioned relative to its normal position */
+    width: 100%; /* setup width of the image */
+	float: none; /* setup position to the right */
+    padding: 0px 0px 0px 0px; /* setup space betwen image and text in order: top, right, bottom, left */
+	right: 0px; /* setup right margin */
+	margin: 0px 0px;
 }
 /* setup margin for numbering equations */
 .number {
