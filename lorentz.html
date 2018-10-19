@@ -54,23 +54,25 @@
 &nbsp
 <p class=title_text>Lorentz transformation</p>
 <img src="images/transformation.png"/>
-<p class=contents_text>Let's say we have two systems <i>S</i> and <i>S'</i>. The system <i>S'</i> is moving at a speed <i>V<sub>x</sub></i>
-    in relation to the system <i>S</i>. Observer in the each systems is going to define position of the object.
-    From <i>S</i> perspective object has position <i>(x,y,z,ct)</i> while from <i>S'</i> perspective <i>(x',y',z',ct')</i>.
+<p class=contents_text>Let's say we have two systems \(S\) and \(S'\). The system \(S'\) is
+    moving at a speed \(V_{x}\) in relation to the system \(S\). Observer in the each
+    systems is going to define position of the object. From \(S\) perspective object has
+    position \((x,y,z,ct)\) while from \(S'\) perspective \((x',y',z',ct')\).
     To know how the coordinates being transferred between systems we need to find linear transformation because
     movement is without acceleration. In this case:</p>
 <p class=number>\begin{equation}x' = ax + bt\end{equation}</p>
 <p class=number>\begin{equation}x = a'x' + b't'\end{equation}</p>
-<p class=contents_text>Where <i>a,b,a',b'</i> are constants that we need to find.
-    Beginning of the <i>S'(x' = 0)</i> <br> system in <i>S</i> system is moving with velocity <i>V</i> then:</p>
+<p class=contents_text>Where \(a,b,a',b'\) are constants that we need to find.
+    Beginning of the \(S'(x' = 0)\) <br> system in \(S\) system is moving with velocity
+    \(V\) then:</p>
 <p>$$0 = ax + bt \quad \Rightarrow \quad b = -a\frac{x}{t} = -av $$</p>
-<p class=contents_text>Seting this result to the (1) equation, and knowing that system <i>S</i> is moving from system <i>S'</i>
-    with velocity <i>-V</i>, we get:</p>
+<p class=contents_text>Seting this result to the (1) equation, and knowing that system
+    \(S\) is moving from system \(S'\) with velocity \(-V\), we get:</p>
 <p class=number>\begin{equation} x' = a(x - vt)\end{equation}</p>
 <p class=number>\begin{equation} x = a'(x' + vt')\end{equation}</p>
-<p class=contents_text>Both systems are symmetrical, then <i>a = a'</i></p>
-<p class=contents_text>Let's send both light signal from each system from its beginning <i>x=x'=0</i> in the same time <i>t=t'=0</i>.
-    For light speed <i>c</i> we get:</p>
+<p class=contents_text>Both systems are symmetrical, then \(a = a'\)</p>
+<p class=contents_text>Let's send both light signal from each system from its beginning
+    \(x=x'=0\) in the same time \(t=t'=0\). For light speed \(c\) we get:</p>
 <p class=number>\begin{equation} x' = ct'\end{equation}</p>
 <p class=number>\begin{equation} x = ct\end{equation}</p>
 <p class=contents_text>Substituting now equations (5) and (6) to (3) and (4), we get:</p>
@@ -80,19 +82,23 @@
 <p>$$c^{2}tt' = a^{2}tt'(c^{2} - v^{2}) $$</p>
 <p>$$ \Rightarrow a^{2} =\frac{c^{2}}{c^{2}-v^{2}} $$</p>
 <p class=number>\begin{equation} \Rightarrow a = \frac{1}{\sqrt{1-\frac{v^{2}}{c^{2}}}} \end{equation}</p>
-<p class=contents_text>Now we can write transformation equations for <i>x</i> and <i>x'</i> coordinates:</p>
+<p class=contents_text>Now we can write transformation equations for \(x\) and \(x'\)
+    coordinates:</p>
 <p>$$ x' = \frac{x - vt}{\sqrt{1-\frac{v^{2}}{c^{2}}}} $$</p>
 <p>$$ x = \frac{x' + vt'}{\sqrt{1-\frac{v^{2}}{c^{2}}}} $$</p>
-<p class=contents_text>To get time transformation we starting from equation (4) and transform to get <i>t'</i>:</p>
+<p class=contents_text>To get time transformation we starting from equation (4) and
+    transform to get \(t'\):</p>
 <p>$$ t' = \frac{x}{av} - \frac{x'}{v} $$</p>
-<p class=contents_text>Now we insert value <i>x'</i> from equation (3):</p>
+<p class=contents_text>Now we insert value \(x'\) from equation (3):</p>
 <p>$$ t' = \frac{x}{av} - \frac{a^{2}(x-vt)}{av} $$</p>
 <p>$$ \Rightarrow t' = \frac{a^{2}vt}{av} + \frac{x(1-a^{2})}{av} $$</p>
-<p class=contents_text>Now inserting value <i>a</i> from equation (9) and after several transformations we get:</p>
+<p class=contents_text>Now inserting value \(a\) from equation (9) and after several
+    transformations we get:</p>
 <p>$$ t' = \frac{vt + x(1-\frac{v^{2}}{c^{2}}) - x}{v\sqrt{1-\frac{v^{2}}{c^{2}}}}$$</p>
 <p>$$ \Rightarrow t' = \frac{t - x\frac{v}{c^{2}}}{\sqrt{1-\frac{v^{2}}{c^{2}}}}$$</p>
-<p class=contents_text>Both systems move in relation to the coordinates <i>x</i>, so the coordinates <i>z</i> and <i>y</i> are not transformed.
-    All transformed coordinates are given below:</p>
+<p class=contents_text>Both systems move in relation to the coordinates \(x\), so the
+    coordinates \(z\) and \(y\) are not transformed. All transformed coordinates are given
+    below:</p>
 <p class=number>\begin{equation} x' = \frac{x - vt}{\sqrt{1-\frac{v^{2}}{c^{2}}}} \quad x = \frac{x' + vt'}{\sqrt{1-\frac{v^{2}}{c^{2}}}} \end{equation}</p>
 <p>$$ y' = y \quad y = y'$$</p>
 <p>$$ z' = z \quad z = z' $$</p>
@@ -105,14 +111,16 @@
 &nbsp
 <p class=title_text>Relativistic velocities adding</p>
 <img src="images/velocities_adding.png"/>
-<p class=contents_text>Let say that we observing object that is moving with his own velocity in another system.
-    We are staying in <i>S</i> system, the object and his system <i>S'</i> are moving away with velocity <i>V</i> from <i>S</i> system.
-    Object it self is moving with another velocity <i>u'</i> from <i>S'</i> system. Using Lorentz transformations
-    (10) and (11) we define velocity <i>u'</i> of the moving object in <i>S'</i> system as:</p>
+<p class=contents_text>Let say that we observing object that is moving with his own velocity
+    in another system. We are staying in \(S\) system, the object and his system \(S'\) are
+    moving away with velocity \(V\) from \(S\) system. Object it self is moving with
+    another velocity \(u'\) from \(S'\) system. Using Lorentz transformations (10) and (11)
+    we define velocity \(u'\) of the moving object in \(S'\) system as:</p>
 <p>$$ u' = \frac{x'}{t'} = \frac{\frac{x - vt}{\sqrt{1-\frac{v^{2}}{c^{2}}}} }{\frac{t -
     x\frac{v}{c^{2}}}{\sqrt{1-\frac{v^{2}}{c^{2}}}}} = \frac{x - vt}{t - x\frac{v}{c^{2}}} \quad /t$$</p>
 <p class=number>\begin{equation} \Rightarrow u' = \frac{\frac{x}{t} - v}{1 - \frac{x}{t}\frac{v}{c^{2}}} = \frac{u - v}{1 - u\frac{v}{c^{2}}} \end{equation}</p>
-<p class=contents_text>To get velocity of the object from <i>S</i> system frame, we need to transform above equation:</p>
+<p class=contents_text>To get velocity of the object from \(S\) system frame, we need to
+    transform above equation:</p>
 <p>$$ u - v = u'(1 - u\frac{v}{c^{2}}) $$</p>
 <p>$$ \Rightarrow u(u'\frac{v}{c^{2}} + 1) = u' + v$$</p>
 <p class=number>\begin{equation} u = \frac{u' + v}{u'\frac{v}{c^{2}} + 1} \end{equation}</p>
@@ -123,12 +131,15 @@
 &nbsp
 <p class=title_text>Velocitis adding example</p>
 <img src="images/velocities_adding.png"/>
-<p class=contents_text>Two spaceships flying from each other in opposite directions with the same  0.9 light speed. What is
-    the speed of one spaceship in term of second one. To calculate this we use (12) equation and put <i>v = 0.9 c</i> and
-<i>u = -0.9 c</i> ( <i>"-"</i> indicates that velocity direction of one spaceship is opposite to the reference frame).</p>
+<p class=contents_text>Two spaceships flying from each other in opposite directions with
+    the same  0.9 light speed. What is the speed of one spaceship in term of second one.
+    To calculate this we use (12) equation and put \(v = 0.9 c\) and \(u = -0.9 c\)
+    ( \("-"\) indicates that velocity direction of one spaceship is opposite to the
+    reference frame).</p>
 <br>
 <p>$$ \Delta u' = \frac{u - v}{1 - u\frac{v}{c^{2}}} = \frac{-0.9 - 0.9}{1 + 0.9\frac{0.9}{1^{2}}} = \frac{-1.8}{1.81} < |-1|c$$</p>
-<p class=contents_text>Second spaceship is moving away from first one with absolute speed less then speed of light.</p>
+<p class=contents_text>Second spaceship is moving away from first one with absolute speed
+    less then speed of light.</p>
 </div>
 
 <div id="page-wrap">
@@ -137,17 +148,18 @@
 <p class=title_text>Length contraction</p>
 <img src="images/length_contraction.png"/>
 <p class=contents_text>Let say that we observing object that is moving with his own velocity
-in another system. We are staying in <i>S</i> system, the object and his system <i>S'</i> are moving away
-with velocity <i>V</i> from <i>S</i> system.<br> The lenght of object in <i>S'</i> system is simply calculated by:
+    in another system. We are staying in \(S\) system, the object and his system \(S'\) are
+    moving away with velocity \(V\) from \(S\) system.<br> The lenght of object in \(S'\)
+    system is simply calculated by:
 <p>$$ L' = x_{2}' - x_{1}'$$</p>
-<p class=contents_text>The same object in <i>S</i> system will by calculated with:</p>
+<p class=contents_text>The same object in \(S\) system will by calculated with:</p>
 <p>$$ L = x_{2} - x_{1}$$</p>
-<p class=contents_text>Where <i>x<sub>1</sub></i> and <i>x<sub>2</sub></i>
-are under the influence of <a href="#lorentz_transformation">Lorentz transformation</a>
-thats why we need to use equations (10). Then we get proper length:</p>
+<p class=contents_text>Where \(x_{1}\) and \(x_{2}\)
+    are under the influence of <a href="#lorentz_transformation">Lorentz transformation</a>
+    thats why we need to use equations (10). Then we get proper length:</p>
 <p>$$ L = \frac{x_{2}' + vt_{2}'}{\sqrt{1-\frac{v^{2}}{c^{2}}}} - \frac{x_{1}' + vt_{1}'}{\sqrt{1-\frac{v^{2}}{c^{2}}}} = \frac{x_{2}' - x_{1}' + vt_{2}' - vt_{1}'}{\sqrt{1-\frac{v^{2}}{c^{2}}}}$$</p>
-<p class=contents_text>Flow of time is the same for all coordinates thats why <i>t'<sub>1</sub> = t'<sub>2</sub></i>.
-Simplifying abowe equation we get:</p>
+<p class=contents_text>Flow of time is the same for all coordinates thats why \(t'_{1} = t'_{2}\).
+    Simplifying abowe equation we get:</p>
 <p class=number>\begin{equation} L = \frac{x_{2}' - x_{1}'}{\sqrt{1-\frac{v^{2}}{c^{2}}}} = \frac{L'}{\sqrt{1-\frac{v^{2}}{c^{2}}}} \end{equation}</p>
 </div>
 
@@ -157,14 +169,17 @@ Simplifying abowe equation we get:</p>
 <p class=title_text>Length contraction example</p>
 <img src="images/length_contraction.png"/>
 <p class=contents_text>Let say that we staing near railroad tracks and we observing person
-in train moving with speed of <i>V = 144 km/h = 40 m/s = 0.04 km/s</i>,
-that holds in his hands a long stick. Length of the stick is <i>L' = 10m</i> becose the stic is
-moving alongside with <i>S'</i> train system. To calculate length of stic that we will se, we need to use equation (14):</p>
+    in train moving with speed of \(V\) = 144 km/h = 40 m/s = 0.04 km/s that holds in his
+    hands a long stick. Length of the stick is \(L'\) = 10m becose the stic is moving
+    alongside with \(S'\) train system. To calculate length of stic that we will se, we need
+    to use equation (14):</p>
 <p>$$ L = \frac{10}{\sqrt{1-\frac{0.04^{2}}{300000^{2}}}} = \frac{10}{0.9999999999999911} \approx 10m$$</p>
 <p class=contents_text>Like you can se there is fast no lenght difference. To make
-this more visible we need to speed up the train. Let them move with speed of <i>V = 0.5c</i>, then we get:</p>
+    this more visible we need to speed up the train. Let them move with speed of
+    \(V\) = 0.5c, then we get:</p>
 <p>$$ L = \frac{10}{\sqrt{1-\frac{0.5^{2}}{1^{2}}}} = \frac{10}{0.8660254037844386} \approx 11.55m$$</p>
-<p class=contents_text>Now the length difference is much more visible. Difference will by about 1.55m.</p>
+<p class=contents_text>Now the length difference is much more visible. Difference will by
+    about 1.55m.</p>
 </div>
 
 <a href="lorentz.html" class="float_top">

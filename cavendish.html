@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Henry Cavendish</title>
+</head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="webstyle.css">
+
+/* setup script to write mathematical equations using LaTex language */
+<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],processEscapes: true}});</script>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "AMS"} } });</script>
+
+<style>
+.over {
+  text-decoration-line: overline;
+  text-decoration-style: duble;
+  text-overline-width: 0px;
+}   
+</style>
+
+<body>
+    
+<div class="back_image"></div>
+
+<div id="page-wrap">
+<p class=title_text>Henry Cavendish</p>
+<p class=title_sub_text>10 October 1731 – 24 February 1810</p>
+<p class=title_sub_text>Creator of: Gravitation constant experiment</p>
+</div>
+
+<div id="page-wrap">
+<table style="width:100%">
+    <tr>
+        <th>
+            <a href="#cavendish_experiment" class=button>Cavendish experiment</a>
+        </th>
+        <th>
+            <a href="#torsion_pendulum_example" class=button>Torsion pendulum example</a>
+        </th>
+    </tr> 
+</table>    
+</div>
+
+
+<div id="page-wrap">
+<br id=cavendish_experiment>
+&nbsp
+<p class=title_text>Cavendish experiment</p>
+<img src="images/torsion_pendulum.png"/>
+<p class=contents_text>The experiment uses a torsion pendulum. On the suspended wire there
+are two identical masses \(m\). At a distance \(r\) from them there are two equal static masses \(M\),
+which are designed to attract masses to each other. Attraction twists the pendulum by the
+\(\Theta\) angle, creating a moment of force \(\bar{M}\) proportional to the angle of the arm swing.
+The momentum will by equalt to:</p>
+<p>$$\bar{M} = -\kappa \theta $$</p>
+<p class=contents_text>On the other hand, the moment of causing force can be determined by
+the arm length and the pulling force by: </p>
+<p>$$\bar{M} = F \frac{L}{2}$$</p>
+<p class=contents_text>Because we have two arms, the moment of force will be twice as large.</p>
+<p>$$\bar{M} = FL$$</p>
+<p class=contents_text>This two momentums are the same, therefore:</p>
+<p>$$\kappa \theta = FL $$</p>
+<p class=contents_text>Knowing <a href="nevton.html#gravitation_law">Newtons gravitional force</a> wy can modify ouer equation to:</p>
+<p class=number>\begin{equation}\kappa \theta = G\frac{mM}{r^{2}}L\end{equation}</p>
+<p class=contents_text>we can determine the moment of the wire's direction from the equation:</p>
+<p>$$T = 2\pi \sqrt{\frac{I}{\kappa}}$$</p>
+<p class=contents_text>The moment of inertia of the smaller balls is:</p>
+<p>$$I = \frac{mL^{2}}{2} $$</p>
+<p class=contents_text>Puting this to above equation \(T\) nad extracting \(\kappa\) we get:</p>
+<p>$$\kappa = \frac{2\pi^{2}mL^{2}}{T^{2}} $$</p>
+<p class=contents_text>Seting this to equation (1), and extracting \(G\), will give us</p>
+<p class=number>\begin{equation}G = \frac{2\pi^{2}r^{2}L}{MT^{2}} \theta \end{equation}</p>
+</div>
+
+<div id="page-wrap">
+<br id=torsion_pendulum_example>
+&nbsp
+<p class=title_text>Torsion pendulum example</p>
+<p class=contents_text>Data collected from experiment:</p>
+<p>$$T = 498 s$$</p>
+<p>$$\Theta = 0.31^{\circ} \sim 0.0054 rad$$</p>
+<p>$$M = 1500 g = 1.5 kg$$</p>
+<p>$$m = 38.3 g$$</p>
+<p>$$r = 46.5 mm = 0.0465 m$$</p>
+<p>$$L = 50 mm = 0.05 m$$</p>
+<p class=contents_text>Puting this data to equation (2), will give the result of:</p>
+<p>$$G = 3.0976 \cdot 10^{-11} \frac{m^{3}}{kg s^{2}}$$</p>
+<p class=contents_text>Current value calculated in 2014 is:</p>
+<p>$$G = 6.67408(31) \cdot 10^{-11} \frac{m^{3}}{kg s^{2}}$$</p>
+</div>
+
+
+<a href="cavendish.html" class="float_top">
+<i class="fa fa-angle-up my-float"></i>
+</a>
+<div class="label-container">
+<div class="label-text">Home</div>
+</div>
+
+<a href="scientists.html" class="float_main">
+<i class="fa fa-angle-left my-float"></i>
+</a>
+<div class="label-container">
+<div class="label-text">Home</div>
+</div>
+
+<a href="index.html" class="float_home">
+<i class="fa fa-home my-float"></i>
+</a>
+<div class="label-container">
+<div class="label-text">Home</div>
+</div>
+
+</body>
+</thml>

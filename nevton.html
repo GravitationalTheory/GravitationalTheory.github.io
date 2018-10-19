@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Isaac Newton</title>
+</head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="webstyle.css">
+
+/* setup script to write mathematical equations using LaTex language */
+<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "AMS"} } });</script>
+
+<body>
+    
+<div class="back_image"></div>
+
+<div id="page-wrap">
+<p class=title_text>Isaac Newton</p>
+<p class=title_sub_text>25 December 1642 – 20 March 1726</p>
+<p class=title_sub_text>Creator of: Laws of Motion</p>
+</div>
+
+<div id="page-wrap">
+<table style="width:100%">
+    <tr>
+        <th>
+            <a href="#first_equation_of_motion" class=button>First equation of motion</a>
+        </th>
+        <th>
+            <a href="#second_equation_of_motion" class=button>Second equation of motion</a>
+        </th>
+        <th>
+            <a href="#third_equation_of_motion" class=button>Third equation of motion</a>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <a href="#first_law" class=button>First law</a>
+        </th>
+        <th>
+            <a href="#second_law" class=button>Second law</a>
+        </th>
+        <th>
+            <a href="#third_law" class=button>Third law</a>
+        </th>
+        <th>
+            <a href="#gravitation_law" class=button>Gravitation law</a>
+        </th>       
+    </tr> 
+</table>    
+</div>
+
+<div id="page-wrap">
+<br id=first_equation_of_motion>
+&nbsp
+<p class=title_text>First equation of motion</p>
+<img src="images/*.png"/>
+<p class=contents_text>Acording to the definition, acceleration \(a\) is change of speed \(\Delta v\) in the
+time interval \(\Delta t\). In short periods of time we can write this as differential equation.</p>
+<p class=number>\begin{equation}a = \frac{dv}{dt}\end{equation}</p>
+<p>$$\rightarrow a \mkern3mu dt = dv $$</p>
+<p class=contents_text>Solving this we need to integrate over velocity and time change.
+    This is from the moment \(t_{0}\), \(v_{0}\) when the movement started, to \(v_{1}\), \(t_{1}\)
+    when the movement was finished.</p>
+<p>$$a \int^{t_{1}}_{t_{0}} dt = \int^{v_{1}}_{v_{0}} dv$$</p>
+<p class=contents_text>At the beginning of the movemet time \(t_{0}\)
+    is equal to 0 and \(v_{0}\) to \(u\). Values \(v_{1}\) and \(t_{1}\) we can put as equal to final velicoty
+    \(v\) and entire moving time \(t\)</p>
+<p>$$a \int^{t}_{0} dt = \int^{v}_{u} dv$$</p>
+<p class=contents_text>After integration we get</p>
+<p>$$at = v-u$$</p>
+<p class=contents_text>Transforming this to get \(v\)</p>
+<p class=number>\begin{equation}v = u + at\end{equation}</p>
+</div>
+
+<div id="page-wrap">
+<br id=second_equation_of_motion>
+&nbsp
+<p class=title_text>Second equation of motion</p>
+<img src="images/*.png"/>
+<p class=contents_text>Acording to the definition, velocity \(v\) is change of distance
+    \(\Delta x\) in the time interval \(\Delta t\). In short periods of time we can write
+    this as differential equation.</p>
+<p class=number>\begin{equation}v = \frac{dx}{dt}\end{equation}</p>
+<p class=contents_text>Using equation (2) we get:</p>
+<p>$$u + at = \frac{dx}{dt}$$</p>
+<p>$$\rightarrow dx = (u + at)dt $$</p>
+<p class=contents_text>Solving this we need to integrate over distance and time change.
+    This is from the moment \(t_{0}\), \(s_{0}\) when the movement started, to \(s_{1}\), \(t_{1}\)
+    when the movement was finished. Acceleration value \(a\) is constant.</p>
+<p>$$\int^{s_{1}}_{s_{0}}dx = \int^{t_{1}}_{t_{0}} (u + at)dt$$</p>
+<p class=contents_text>At the beginning of the movemet time \(t_{0}\) nad distance \(x_{0}\)
+    are bouth equal to 0 . Values \(s_{1}\) and \(t_{1}\) we can put as equal to final distance
+    \(s\) and entire moving time \(t\).</p>
+<p>$$\int^{s}_{0}dx = \int^{t}_{0} (u + at)dt = \int^{t}_{0}u \mkern3mu dt + a\int^{t}_{0}t \mkern3mu dt$$</p>
+<p class=contents_text>After integration we get</p>
+<p class=number>\begin{equation}s = ut + \frac{at^{2}}{2}\end{equation}</p>
+</div>
+
+<div id="page-wrap">
+<br id=third_equation_of_motion>
+&nbsp
+<p class=title_text>Third equation of motion</p>
+<img src="images/*.png"/>
+<p class=contents_text>Let's say</p>
+</div>
+
+<div id="page-wrap">
+<br id=first_law>
+&nbsp
+<p class=title_text>First law</p>
+<img src="images/*.png"/>
+<p class=contents_text>If there is not any force describled by <a href="#second_law">Newtons second law</a> acting on
+    moving object, the object will by moving with initial speed \(u\)</p>
+<p>$$if \mkern3mu F = 0 \rightarrow a = 0 \quad then \quad v = u = constant$$</p>
+<p class=contents_text>or will by staing still if \(u = 0\).</p>
+<p>$$if \mkern3mu F = 0 \rightarrow a = 0 \quad and \quad u = 0 \quad then \quad v = 0$$</p>
+</div>
+
+<div id="page-wrap">
+<br id=second_law>
+&nbsp
+<p class=title_text>Second law</p>
+<img src="images/*.png"/>
+<p class=number>\begin{equation} F = ma \end{equation}</p>
+</div>
+
+<div id="page-wrap">
+<br id=third_law>
+&nbsp
+<p class=title_text>Third law</p>
+<img src="images/*.png"/>
+<p class=contents_text>If </p>
+</div>
+
+<div id="page-wrap">
+<br id=gravitation_law>
+&nbsp
+<p class=title_text>Gravitation law</p>
+<img src="images/circle_movement.png"/>
+<p class=contents_text>The value of the linear velocity in uniform motion around the
+circle is constant, and is expressed through:</p>
+<p>$$ v = \frac{\Delta s}{\Delta t} $$</p>
+<p class=contents_text>The linear speed can also be represented as the ratio of the
+circumference of the circle \(\pi\) to the period \(T\) where one turn was made.</p>
+<p>$$ v = \frac{2\pi r}{T} $$</p>
+<p class=contents_text>The movement on circle is constant. We can now consider movement
+between two points A and B. In short period of time \(t, \alpha \rightarrow 0\) the lenght
+of the circle's arc \(l\) will by fast the same as lenght of direct road \(\Delta s\)
+between two points.</p>
+<p>$$ l = \frac{\alpha 2\pi r}{360} \quad \Delta s = 2r sin\frac{\alpha}{2} $$</p>
+<p>$$\lim_{\alpha \to 0}\frac{\alpha 2\pi r}{360} \quad \sim \quad \lim_{\alpha \to 0}2r sin\frac{\alpha}{2}$$</p>
+<p>$$\Rightarrow l \sim  \Delta s$$</p>
+<p class=contents_text>On the sketch we see two similar triangle \(OAB\) and \(BCD\).
+Therefore we can write relation between them:</p>
+<p>$$\frac{\Delta s}{r} = \frac{\Delta v}{v}$$</p>
+<p class=contents_text>Dividing thi by time of movement \(\Delta t\) we get:</p>
+<p>$$\frac{1}{r}\frac{\Delta s}{\Delta t} = \frac{1}{v}\frac{\Delta v}{\Delta t}$$</p>
+<p class=contents_text>Now we can see in this equation linear speed \(v\) and centripetal
+acceleration \(a_{r}\).
+<p>$$\frac{1}{r}v = \frac{1}{v}a_{r}$$</p>
+<p class=number>\begin{equation} \Rightarrow a_{r} = \frac{v^{2}}{r} \end{equation}</p>
+<p class=contents_text>Comparing centripetal acceleration (2) with acceleration from Newton
+second law (1) we get:
+<p>$$\frac{v^{2}}{r} = \frac{F}{m} $$</p>
+<p class=contents_text>From this, force \(F\) that holds object on round orbit will by:</p>
+<p>$$F = \frac{mv^{2}}{r}$$</p>
+<p class=contents_text>Using equation described linear velocity on circle \(v\) and third Keppler
+law</p>
+<p>$$v = \frac{2\Pi r}{T}$$</p>
+<p>$$kT^{2} = r^{3}$$</p>
+<p>$$\Rightarrow v^{2} = \frac{4\Pi^{2} r^{2}}{T^{2}} = \frac{4\Pi^{2}k r^{2}}{r^{3}} = \frac{4\Pi^{2}k}{r} $$</p>
+<p class=contents_text>gravitional force will by thansform to:</p>
+<p>$$F = \frac{m\frac{k4\Pi^{2}}{r}}{r} = 4\Pi^{2}k\frac{m}{r^{2}}$$</p>
+<p class=contents_text>force origin comes from object in centre of circle, thats why we
+can name this force as \(F_{BO}\). Make in consideration Newtons third law,
+the same force but in opposed direction will by acting from object on orbit an object in the center.</p>
+<p>$$F_{OB} = 4\Pi^{2}k\frac{M}{r^{2}}$$</p>
+<p class=contents_text>As force of gravity is proportional to bouth forces
+\(F_{BO}\) and \(F_{OB}\) so it must meet the combined requirement.</p>
+<p>$$F_{g} \sim 4\Pi^{2}k\frac{mM}{r^{2}}$$</p>
+<p class=contents_text>usint constant \(G = 4\pi^{2}k\) we get all know form of gravitional law.</p>
+<p class=number>\begin{equation}F_{g} = G\frac{mM}{r^{2}}\end{equation}</p>
+<p class=contents_text>\(G\) value was first measured by <a href="cavendish.html#cavendish_experiment">Henry Cavendish</a></p>
+</div>
+
+
+<a href="nevton.html" class="float_top">
+<i class="fa fa-angle-up my-float"></i>
+</a>
+<div class="label-container">
+<div class="label-text">Home</div>
+</div>
+
+<a href="scientists.html" class="float_main">
+<i class="fa fa-angle-left my-float"></i>
+</a>
+<div class="label-container">
+<div class="label-text">Home</div>
+</div>
+
+<a href="index.html" class="float_home">
+<i class="fa fa-home my-float"></i>
+</a>
+<div class="label-container">
+<div class="label-text">Home</div>
+</div>
+
+</body>
+</thml>
