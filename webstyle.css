@@ -93,19 +93,29 @@ img.small {
 /* rewrite above img settings for another use */
 img.large{
 	position: relative; /* The element is positioned relative to its normal position */
-    width: 100%; /* setup width of the image */
+  width: 100%; /* setup width of the image */
 	float: none; /* setup position to the right */
-    padding: 0px 0px 0px 0px; /* setup space betwen image and text in order: top, right, bottom, left */
+  padding: 0px 0px 0px 0px; /* setup space betwen image and text in order: top, right, bottom, left */
 	right: 0px; /* setup right margin */
 	margin: 0px 0px;
 }
 /* setup margin for numbering equations */
 .number {
-    margin-right: 50px; /* setup right margin */
+  margin-right: 50px; /* setup right margin */
 }
 /* setup navigation button */
-th {
-	align-self: center;
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+td {
+	border-bottom: 1px solid grey;
+	width: 10%;
+	text-align: center;
+}
+td.title {
+	width: 50%;
+	text-align: left;
 }
 .button {
 	background-color: #eee; 
@@ -117,23 +127,23 @@ th {
   display: inline-block;
   font-size: 16px;
 	border-radius: 5px;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 	border-bottom-width: 2px;
 }
 .button:hover {
-    background-color: #008CBA;
-    color: white;
+  background-color: #008CBA;
+  color: white;
 }
-/*setup image link wisual options */
+/*setup image link wisual options that will not change */
 a:link {
-    color: black;
+  color: black;
 	font-weight: bold; /* setup font weight */
-    text-decoration: none;
+  text-decoration: none;
 }
 a:visited {
-    color: black;
+  color: black;
 	font-weight: bold; /* setup font weight */
-    text-decoration: none;
+  text-decoration: none;
 }
 /* setup side navigation button */
 /* setup navigation label */

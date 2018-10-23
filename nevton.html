@@ -26,29 +26,34 @@
 <div id="page-wrap">
 <table style="width:100%">
     <tr>
-        <th>
-            <a href="#first_equation_of_motion" class=button>First equation of motion</a>
-        </th>
-        <th>
-            <a href="#second_equation_of_motion" class=button>Second equation of motion</a>
-        </th>
-        <th>
-            <a href="#third_equation_of_motion" class=button>Third equation of motion</a>
-        </th>
+        <td class=title><p class=title_text>Equations of motion</p></td>
+        <td>
+            <a href="#first_equation_of_motion" class=button>I</a>
+        </td>
+        <td>
+            <a href="#second_equation_of_motion" class=button>II</a>
+        </td>
+        <td>
+            <a href="#third_equation_of_motion" class=button>III</a>
+        </td>
     </tr>
     <tr>
-        <th>
-            <a href="#first_law" class=button>First law</a>
-        </th>
-        <th>
-            <a href="#second_law" class=button>Second law</a>
-        </th>
-        <th>
-            <a href="#third_law" class=button>Third law</a>
-        </th>
-        <th>
-            <a href="#gravitation_law" class=button>Gravitation law</a>
-        </th>       
+        <td class=title><p class=title_text>Laws of motion</p></td>
+        <td>
+            <a href="#first_law" class=button>I</a>
+        </td>
+        <td>
+            <a href="#second_law" class=button>II</a>
+        </td>
+        <td>
+            <a href="#third_law" class=button>III</a>
+        </td>
+    </tr>
+    <tr>
+        <td class=title><p class=title_text>Gravity law</p></td>
+        <td>
+            <a href="#gravitation_law" class=button>Gravity</a>
+        </td>       
     </tr> 
 </table>    
 </div>
@@ -57,96 +62,128 @@
 <br id=first_equation_of_motion>
 &nbsp
 <p class=title_text>First equation of motion</p>
-<img src="images/*.png"/>
-<p class=contents_text>Acording to the definition, acceleration \(a\) is change of speed \(\Delta v\) in the
+<p class=contents_text>Acording to the definition, acceleration \(\vec{a}\) is change of speed \(\Delta \vec{v}\) in the
 time interval \(\Delta t\). In short periods of time we can write this as differential equation.</p>
-<p class=number>\begin{equation}a = \frac{dv}{dt}\end{equation}</p>
-<p>$$\rightarrow a \mkern3mu dt = dv $$</p>
+<p class=number>\begin{equation}\vec{a} = \frac{d\vec{v}}{dt}\end{equation}</p>
+<p>$$\rightarrow \vec{a} \mkern3mu dt = d\vec{v} $$</p>
 <p class=contents_text>Solving this we need to integrate over velocity and time change.
     This is from the moment \(t_{0}\), \(v_{0}\) when the movement started, to \(v_{1}\), \(t_{1}\)
     when the movement was finished.</p>
-<p>$$a \int^{t_{1}}_{t_{0}} dt = \int^{v_{1}}_{v_{0}} dv$$</p>
+<p>$$\vec{a} \int^{t_{1}}_{t_{0}} dt = \int^{v_{1}}_{v_{0}} d\vec{v}$$</p>
 <p class=contents_text>At the beginning of the movemet time \(t_{0}\)
     is equal to 0 and \(v_{0}\) to \(u\). Values \(v_{1}\) and \(t_{1}\) we can put as equal to final velicoty
     \(v\) and entire moving time \(t\)</p>
-<p>$$a \int^{t}_{0} dt = \int^{v}_{u} dv$$</p>
+<p>$$\vec{a} \int^{t}_{0} dt = \int^{v}_{u} d\vec{v}$$</p>
 <p class=contents_text>After integration we get</p>
-<p>$$at = v-u$$</p>
-<p class=contents_text>Transforming this to get \(v\)</p>
-<p class=number>\begin{equation}v = u + at\end{equation}</p>
+<p>$$\vec{a}t = \vec{v}-\vec{u}$$</p>
+<p class=contents_text>Transforming this to get \(\vec{v}\)</p>
+<p class=number>\begin{equation}\vec{v} = \vec{u} + \vec{a}t\end{equation}</p>
 </div>
 
 <div id="page-wrap">
 <br id=second_equation_of_motion>
 &nbsp
 <p class=title_text>Second equation of motion</p>
-<img src="images/*.png"/>
-<p class=contents_text>Acording to the definition, velocity \(v\) is change of distance
+<p class=contents_text>Acording to the definition, velocity \(\vec{v}\) is change of distance
     \(\Delta x\) in the time interval \(\Delta t\). In short periods of time we can write
     this as differential equation.</p>
-<p class=number>\begin{equation}v = \frac{dx}{dt}\end{equation}</p>
+<p class=number>\begin{equation}\vec{v} = \frac{dx}{dt}\end{equation}</p>
 <p class=contents_text>Using equation (2) we get:</p>
-<p>$$u + at = \frac{dx}{dt}$$</p>
-<p>$$\rightarrow dx = (u + at)dt $$</p>
+<p>$$\vec{u} + \vec{a}t = \frac{dx}{dt}$$</p>
+<p>$$\rightarrow dx = (\vec{u} + \vec{a}t)dt $$</p>
 <p class=contents_text>Solving this we need to integrate over distance and time change.
     This is from the moment \(t_{0}\), \(s_{0}\) when the movement started, to \(s_{1}\), \(t_{1}\)
     when the movement was finished. Acceleration value \(a\) is constant.</p>
-<p>$$\int^{s_{1}}_{s_{0}}dx = \int^{t_{1}}_{t_{0}} (u + at)dt$$</p>
+<p>$$\int^{s_{1}}_{s_{0}}dx = \int^{t_{1}}_{t_{0}} (\vec{u} + \vec{a}t)dt$$</p>
 <p class=contents_text>At the beginning of the movemet time \(t_{0}\) nad distance \(x_{0}\)
     are bouth equal to 0 . Values \(s_{1}\) and \(t_{1}\) we can put as equal to final distance
     \(s\) and entire moving time \(t\).</p>
-<p>$$\int^{s}_{0}dx = \int^{t}_{0} (u + at)dt = \int^{t}_{0}u \mkern3mu dt + a\int^{t}_{0}t \mkern3mu dt$$</p>
+<p>$$\int^{s}_{0}dx = \int^{t}_{0} (\vec{u} + \vec{a}t)dt = \int^{t}_{0}\vec{u} \mkern3mu dt + \vec{a}\int^{t}_{0}t \mkern3mu dt$$</p>
 <p class=contents_text>After integration we get</p>
-<p class=number>\begin{equation}s = ut + \frac{at^{2}}{2}\end{equation}</p>
+<p class=number>\begin{equation}s = \vec{u}t + \frac{\vec{a}t^{2}}{2}\end{equation}</p>
 </div>
 
 <div id="page-wrap">
 <br id=third_equation_of_motion>
 &nbsp
 <p class=title_text>Third equation of motion</p>
-<img src="images/*.png"/>
-<p class=contents_text>Let's say</p>
+<p class=contents_text>Acording to the definition, acceleration \(\vec{a}\) can by described as
+    below:</p>
+<p>$$\vec{a} = \frac{dx}{dt} \frac{d\vec{v}}{dx} = \vec{v} \frac{d\vec{v}}{dx}$$</p>
+<p class=contents_text>after transformation</p>
+<p>$$\vec{a} \mkern3mu dx = \vec{v} \mkern3mu d\vec{v} $$</p>
+<p class=contents_text>Solving this we need to integrate over distance and time change.
+    This is from the moment \(\vec{v}_{0}\), \(s_{0}\) when the movement started, to \(\vec{v}_{1}\), \(s_{1}\)
+    when the movement was finished. Acceleration value \(\vec{a}\) is constant.</p>
+<p>$$\vec{a}\int^{s_{0}}_{s_{1}}dx = \int^{\vec{v}_{0}}_{\vec{v}_{1}}\vec{v} \mkern3mu d\vec{v} $$</p>
+<p class=contents_text>At the beginning of the movemet distance \(s_{0}\) was 0, and velocity
+    \(\vec{v}_{0}\) was equal to u. Values \(s_{1}\) and \(\vec{v}_{1}\) we can put as equal to final distance
+    \(s\) and final velocity \(\vec{v}\).</p>
+<p>$$\vec{a}\int^{s}_{0}dx = \int^{v}_{u}\vec{v} \mkern3mu d\vec{v} $$</p>
+<p class=contents_text>After integration we get</p>
+<p>$$\vec{a}s = \frac{\vec{v}^{2} - \vec{u}^{2}}{2}$$</p>
+<p class=contents_text>after transformation</p>
+<p class=number>\begin{equation}\vec{v} = \sqrt{\vec{u}^{2} + 2\vec{a}s}\end{equation}</p>
 </div>
 
 <div id="page-wrap">
 <br id=first_law>
 &nbsp
 <p class=title_text>First law</p>
-<img src="images/*.png"/>
-<p class=contents_text>If there is not any force describled by <a href="#second_law">Newtons second law</a> acting on
-    moving object, the object will by moving with initial speed \(u\)</p>
-<p>$$if \mkern3mu F = 0 \rightarrow a = 0 \quad then \quad v = u = constant$$</p>
-<p class=contents_text>or will by staing still if \(u = 0\).</p>
-<p>$$if \mkern3mu F = 0 \rightarrow a = 0 \quad and \quad u = 0 \quad then \quad v = 0$$</p>
+<img src="images/first_law.png"/>
+<p class=contents_text>If sum of all forces describled by <a href="#second_law">Newtons
+    second law</a> acting on moving object are equal to 0, then the object will by moving
+    with initial speed \(\vec{u}\) or stay in place.</p>
+<p>$$if \mkern3mu \sum^{N}_{i=1}\vec{F}_{i} = 0 \rightarrow \vec{a} = 0 \quad then \quad \vec{v} = \vec{u} = constant$$</p>
+<p class=contents_text>or will by staing still if \(\vec{u} = 0\).</p>
+<p>$$if \mkern3mu \sum^{N}_{i=1}\vec{F}_{i} = 0 \rightarrow \vec{a} = 0 \quad and \quad \vec{u} = 0 \quad then \quad \vec{v} = 0$$</p>
 </div>
 
 <div id="page-wrap">
 <br id=second_law>
 &nbsp
 <p class=title_text>Second law</p>
-<img src="images/*.png"/>
-<p class=number>\begin{equation} F = ma \end{equation}</p>
+<img src="images/second_law.png"/>
+<p class=contents_text>If moving object changes his momentum \(\vec{p}\) in time \(t\), then the
+    force acting on this object is proportional to this momentum.
+<p class=number>\begin{equation}\vec{F} = \frac{d\vec{p}}{dt}\end{equation}</p>
+<p class=contents_text>The momentum \(\vec{p}\) is equal to:</p>
+<p>$$\vec{p} = m\vec{v}$$</p>
+<p class=contents_text>puting this to equation (6) and considering that object mass \(m\)
+    is constant</p>
+<p class=number>\begin{equation}\vec{F} = m\frac{d\vec{v}}{dt} = m\vec{a}\end{equation}</p>
+<p class=contents_text>We can consider two folling masses \(m_{1}\) and \(m_{2}\) wich
+constant acceleration \(\vec{g}\). </p>
+<p>$$\vec{g} = constant$$</p>
+<p>$$if \mkern10mu m_{2} > m_{1} \rightarrow \vec{F}_{2} > \vec{F}_{1}$$</p>
 </div>
 
 <div id="page-wrap">
 <br id=third_law>
 &nbsp
 <p class=title_text>Third law</p>
-<img src="images/*.png"/>
-<p class=contents_text>If </p>
+<img src="images/third_law.png"/>
+<p class=contents_text>To every action there is always opposed an equal reaction: or
+    the mutual actions of two bodies upon each other are always equal, and directed to
+    contrary parts.</p>
+<p class=number>\begin{equation}\vec{F}_{1} = - \vec{F}_{2}\end{equation}</p>
+<p class=contents_text>Let's consider a ball of mass \(m\) lying on the floor. Gravity is pulling ball
+    down with \(\vec{F}_{g}\) force thru the surface, but surface reacting to this and push ball
+    up with the force \(\vec{F}_{r}\) of the same magnitude but in another direction.</p>
+<p>$$\vec{F}_{r} = - \vec{F}_{g}$$</p>
 </div>
 
 <div id="page-wrap">
 <br id=gravitation_law>
 &nbsp
 <p class=title_text>Gravitation law</p>
-<img src="images/circle_movement.png"/>
+<img src="images/newton_gravity.png"/>
 <p class=contents_text>The value of the linear velocity in uniform motion around the
 circle is constant, and is expressed through:</p>
-<p>$$ v = \frac{\Delta s}{\Delta t} $$</p>
+<p>$$ \vec{v} = \frac{\Delta s}{\Delta t} $$</p>
 <p class=contents_text>The linear speed can also be represented as the ratio of the
 circumference of the circle \(\pi\) to the period \(T\) where one turn was made.</p>
-<p>$$ v = \frac{2\pi r}{T} $$</p>
+<p>$$ \vec{v} = \frac{2\pi r}{T} $$</p>
 <p class=contents_text>The movement on circle is constant. We can now consider movement
 between two points A and B. In short period of time \(t, \alpha \rightarrow 0\) the lenght
 of the circle's arc \(l\) will by fast the same as lenght of direct road \(\Delta s\)
@@ -156,34 +193,34 @@ between two points.</p>
 <p>$$\Rightarrow l \sim  \Delta s$$</p>
 <p class=contents_text>On the sketch we see two similar triangle \(OAB\) and \(BCD\).
 Therefore we can write relation between them:</p>
-<p>$$\frac{\Delta s}{r} = \frac{\Delta v}{v}$$</p>
+<p>$$\frac{\Delta s}{r} = \frac{\Delta \vec{v}}{\vec{v}}$$</p>
 <p class=contents_text>Dividing thi by time of movement \(\Delta t\) we get:</p>
-<p>$$\frac{1}{r}\frac{\Delta s}{\Delta t} = \frac{1}{v}\frac{\Delta v}{\Delta t}$$</p>
-<p class=contents_text>Now we can see in this equation linear speed \(v\) and centripetal
+<p>$$\frac{1}{r}\frac{\Delta s}{\Delta t} = \frac{1}{\vec{v}}\frac{\Delta \vec{v}}{\Delta t}$$</p>
+<p class=contents_text>Now we can see in this equation linear speed \(\vec{v}\) and centripetal
 acceleration \(a_{r}\).
-<p>$$\frac{1}{r}v = \frac{1}{v}a_{r}$$</p>
-<p class=number>\begin{equation} \Rightarrow a_{r} = \frac{v^{2}}{r} \end{equation}</p>
+<p>$$\frac{1}{r}\vec{v} = \frac{1}{\vec{v}}\vec{a}_{r}$$</p>
+<p class=number>\begin{equation} \Rightarrow \vec{a}_{r} = \frac{\vec{v}^{2}}{r} \end{equation}</p>
 <p class=contents_text>Comparing centripetal acceleration (2) with acceleration from Newton
 second law (1) we get:
-<p>$$\frac{v^{2}}{r} = \frac{F}{m} $$</p>
-<p class=contents_text>From this, force \(F\) that holds object on round orbit will by:</p>
-<p>$$F = \frac{mv^{2}}{r}$$</p>
+<p>$$\frac{\vec{v}^{2}}{r} = \frac{\vec{F}}{m} $$</p>
+<p class=contents_text>From this, force \(\vec{F}\) that holds object on round orbit will by:</p>
+<p>$$\vec{F} = \frac{m\vec{v}^{2}}{r}$$</p>
 <p class=contents_text>Using equation described linear velocity on circle \(v\) and third Keppler
 law</p>
-<p>$$v = \frac{2\Pi r}{T}$$</p>
+<p>$$\vec{v} = \frac{2\Pi r}{T}$$</p>
 <p>$$kT^{2} = r^{3}$$</p>
-<p>$$\Rightarrow v^{2} = \frac{4\Pi^{2} r^{2}}{T^{2}} = \frac{4\Pi^{2}k r^{2}}{r^{3}} = \frac{4\Pi^{2}k}{r} $$</p>
+<p>$$\Rightarrow \vec{v}^{2} = \frac{4\Pi^{2} r^{2}}{T^{2}} = \frac{4\Pi^{2}k r^{2}}{r^{3}} = \frac{4\Pi^{2}k}{r} $$</p>
 <p class=contents_text>gravitional force will by thansform to:</p>
-<p>$$F = \frac{m\frac{k4\Pi^{2}}{r}}{r} = 4\Pi^{2}k\frac{m}{r^{2}}$$</p>
+<p>$$\vec{F} = \frac{m\frac{k4\Pi^{2}}{r}}{r} = 4\Pi^{2}k\frac{m}{r^{2}}$$</p>
 <p class=contents_text>force origin comes from object in centre of circle, thats why we
-can name this force as \(F_{BO}\). Make in consideration Newtons third law,
+can name this force as \(\vec{F}_{BO}\). Make in consideration Newtons third law,
 the same force but in opposed direction will by acting from object on orbit an object in the center.</p>
-<p>$$F_{OB} = 4\Pi^{2}k\frac{M}{r^{2}}$$</p>
+<p>$$\vec{F}_{OB} = 4\Pi^{2}k\frac{M}{r^{2}}$$</p>
 <p class=contents_text>As force of gravity is proportional to bouth forces
-\(F_{BO}\) and \(F_{OB}\) so it must meet the combined requirement.</p>
-<p>$$F_{g} \sim 4\Pi^{2}k\frac{mM}{r^{2}}$$</p>
+\(\vec{F}_{BO}\) and \(\vec{F}_{OB}\) so it must meet the combined requirement.</p>
+<p>$$\vec{F}_{g} \sim 4\Pi^{2}k\frac{mM}{r^{2}}$$</p>
 <p class=contents_text>usint constant \(G = 4\pi^{2}k\) we get all know form of gravitional law.</p>
-<p class=number>\begin{equation}F_{g} = G\frac{mM}{r^{2}}\end{equation}</p>
+<p class=number>\begin{equation}\vec{F}_{g} = G\frac{mM}{r^{2}}\end{equation}</p>
 <p class=contents_text>\(G\) value was first measured by <a href="cavendish.html#cavendish_experiment">Henry Cavendish</a></p>
 </div>
 
