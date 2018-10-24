@@ -64,7 +64,7 @@
 <p class=title_text>First equation of motion</p>
 <p class=contents_text>Acording to the definition, acceleration \(\vec{a}\) is change of speed \(\Delta \vec{v}\) in the
 time interval \(\Delta t\). In short periods of time we can write this as differential equation.</p>
-<p class=number>\begin{equation}\vec{a} = \frac{d\vec{v}}{dt}\end{equation}</p>
+<p class=number>\begin{equation} \label{eq:N1}\vec{a} = \frac{d\vec{v}}{dt}\end{equation}</p>
 <p>$$\rightarrow \vec{a} \mkern3mu dt = d\vec{v} $$</p>
 <p class=contents_text>Solving this we need to integrate over velocity and time change.
     This is from the moment \(t_{0}\), \(v_{0}\) when the movement started, to \(v_{1}\), \(t_{1}\)
@@ -77,7 +77,7 @@ time interval \(\Delta t\). In short periods of time we can write this as differ
 <p class=contents_text>After integration we get</p>
 <p>$$\vec{a}t = \vec{v}-\vec{u}$$</p>
 <p class=contents_text>Transforming this to get \(\vec{v}\)</p>
-<p class=number>\begin{equation}\vec{v} = \vec{u} + \vec{a}t\end{equation}</p>
+<p class=number>\begin{equation} \label{eq:N2}\vec{v} = \vec{u} + \vec{a}t\end{equation}</p>
 </div>
 
 <div id="page-wrap">
@@ -88,7 +88,7 @@ time interval \(\Delta t\). In short periods of time we can write this as differ
     \(\Delta x\) in the time interval \(\Delta t\). In short periods of time we can write
     this as differential equation.</p>
 <p class=number>\begin{equation}\vec{v} = \frac{dx}{dt}\end{equation}</p>
-<p class=contents_text>Using equation (2) we get:</p>
+<p class=contents_text>Using equation \eqref{eq:N2} we get:</p>
 <p>$$\vec{u} + \vec{a}t = \frac{dx}{dt}$$</p>
 <p>$$\rightarrow dx = (\vec{u} + \vec{a}t)dt $$</p>
 <p class=contents_text>Solving this we need to integrate over distance and time change.
@@ -146,12 +146,12 @@ time interval \(\Delta t\). In short periods of time we can write this as differ
 <img src="images/second_law.png"/>
 <p class=contents_text>If moving object changes his momentum \(\vec{p}\) in time \(t\), then the
     force acting on this object is proportional to this momentum.
-<p class=number>\begin{equation}\vec{F} = \frac{d\vec{p}}{dt}\end{equation}</p>
+<p class=number>\begin{equation} \label{eq:N6} \vec{F} = \frac{d\vec{p}}{dt}\end{equation}</p>
 <p class=contents_text>The momentum \(\vec{p}\) is equal to:</p>
 <p>$$\vec{p} = m\vec{v}$$</p>
-<p class=contents_text>puting this to equation (6) and considering that object mass \(m\)
+<p class=contents_text>puting this to equation \eqref{eq:N6} and considering that object mass \(m\)
     is constant</p>
-<p class=number>\begin{equation}\vec{F} = m\frac{d\vec{v}}{dt} = m\vec{a}\end{equation}</p>
+<p class=number>\begin{equation} \label{eq:N7} \vec{F} = m\frac{d\vec{v}}{dt} = m\vec{a}\end{equation}</p>
 <p class=contents_text>We can consider two folling masses \(m_{1}\) and \(m_{2}\) wich
 constant acceleration \(\vec{g}\). </p>
 <p>$$\vec{g} = constant$$</p>
@@ -199,9 +199,9 @@ Therefore we can write relation between them:</p>
 <p class=contents_text>Now we can see in this equation linear speed \(\vec{v}\) and centripetal
 acceleration \(a_{r}\).
 <p>$$\frac{1}{r}\vec{v} = \frac{1}{\vec{v}}\vec{a}_{r}$$</p>
-<p class=number>\begin{equation} \Rightarrow \vec{a}_{r} = \frac{\vec{v}^{2}}{r} \end{equation}</p>
-<p class=contents_text>Comparing centripetal acceleration (2) with acceleration from Newton
-second law (1) we get:
+<p class=number>\begin{equation} \label{eq:N9} \Rightarrow \vec{a}_{r} = \frac{\vec{v}^{2}}{r} \end{equation}</p>
+<p class=contents_text>Comparing centripetal acceleration \eqref{eq:N9} with acceleration from Newton
+second law \eqref{eq:N7} we get:
 <p>$$\frac{\vec{v}^{2}}{r} = \frac{\vec{F}}{m} $$</p>
 <p class=contents_text>From this, force \(\vec{F}\) that holds object on round orbit will by:</p>
 <p>$$\vec{F} = \frac{m\vec{v}^{2}}{r}$$</p>
@@ -220,7 +220,7 @@ the same force but in opposed direction will by acting from object on orbit an o
 \(\vec{F}_{BO}\) and \(\vec{F}_{OB}\) so it must meet the combined requirement.</p>
 <p>$$\vec{F}_{g} \sim 4\Pi^{2}k\frac{mM}{r^{2}}$$</p>
 <p class=contents_text>usint constant \(G = 4\pi^{2}k\) we get all know form of gravitional law.</p>
-<p class=number>\begin{equation}\vec{F}_{g} = G\frac{mM}{r^{2}}\end{equation}</p>
+<p class=number>\begin{equation}\vec{F}_{g} = -G\frac{mM}{r^{2}}\hat{r}\end{equation}</p>
 <p class=contents_text>\(G\) value was first measured by <a href="cavendish.html#cavendish_experiment">Henry Cavendish</a></p>
 </div>
 
