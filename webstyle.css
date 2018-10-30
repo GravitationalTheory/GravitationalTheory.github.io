@@ -23,7 +23,7 @@
 }
 /* polaroid images */
 div.polaroid {
-  width: 40%;
+  width: 70%;  /* set width of polaroid class image */
   height: 20%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
@@ -84,11 +84,11 @@ img {
 }
 img.small {
     position: relative; /* The element is positioned relative to its normal position */
-    width: 10%; /* setup width of the image */
+    width: 20%; /* setup width of the image */
     float: right; /* setup position to the right */
     padding: 10px 10px 10px 40px; /* setup space betwen image and text in order: top, right, bottom, left */
     right: 20px; /* setup right margin */
-    margin: 1px 20px;
+    margin: 1px 1px;
 }
 /* rewrite above img settings for another use */
 img.large{
@@ -137,12 +137,12 @@ td.title {
 /*setup image link wisual options that will not change */
 a:link {
   color: black;
-	font-weight: bold; /* setup font weight */
+	font-weight: normal; /* setup font weight */
   text-decoration: none;
 }
 a:visited {
   color: black;
-	font-weight: bold; /* setup font weight */
+	font-weight: normal; /* setup font weight */
   text-decoration: none;
 }
 /* setup side navigation button */

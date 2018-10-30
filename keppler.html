@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Johannes Kepler</title>
+</head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="webstyle.css">
+
+/* setup script to write mathematical equations using LaTex language */
+<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "AMS"} } });</script>
+
+<body>
+    
+<div class="back_image"></div>
+
+<div id="page-wrap">
+<p class=title_text>Johannes Kepler</p>
+<p class=title_sub_text>27 December 1571 – 15 November 1630</p>
+<p class=title_sub_text>Creator of: Planetary Motions Law</p>
+</div>
+
+<div id="page-wrap">
+<table style="width:100%">
+    <tr>
+        <td class=title><p class=title_text>Kepler's Laws</p></td>
+        <td>
+            <a href="#first_law" class=button>I</a>
+        </td>
+        <td>
+            <a href="#second_law" class=button>II</a>
+        </td>
+        <td>
+            <a href="#third_law" class=button>III</a>
+        </td>
+    </tr>
+</table>    
+</div>
+
+<div id="page-wrap">
+<br id=first_law>
+&nbsp
+<p class=title_text>First equation of motion</p>
+<img src="images/ellipse.png"/>
+<p class=contents_text><b>Deriving the equation of an ellipse</b></p>
+<p class=contents_text>The ellipse has two foci \((-c, 0)\) and \((c, 0)\). The point on the
+    ellipse \((x, y)\) is always at the same distance from the sum of the distance from the
+    foci.</p>
+<p>$$d_{1} + d_{2} = constant $$</p>
+<p class=contents_text>Distance from \((-c, 0)\) to \((a, 0)\) and from \((c, 0)\) to
+    \((a, 0)\) are equal to:</p>
+<p>$$(a, 0) \rightarrow (-c, 0) = a − (−c) = a + c$$</p>
+<p>$$(a, 0) \rightarrow (c, 0) = a - c$$</p>
+<p>$$\Rightarrow (a + c) + (a - c) = 2a$$</p>
+<p class=number>\begin{equation}\Rightarrow \label{eq:K1} d_{1} + d_{2} = 2a\end{equation}</p>
+<p class=contents_text>Using abowe equation \eqref{eq:K1} we can use calculation for
+    distance formula to find ellipse general equation.</p>
+<p>$$d_{1} + d_{2} = \sqrt{(x-(-c))^{2} + (y-0)^{2}} + \sqrt{(x-c))^{2} + (y-0)^{2}} = 2a $$</p>
+<p>$$\Rightarrow \sqrt{(x+c)^{2} + y^{2}} = 2a - \sqrt{(x-c)^{2} + y^{2}}$$</p>
+<p class=contents_text>Squaring both sites, reduce similar values and after transform we get:</p>
+<p>$$cx - a^{2} = -a \sqrt{(x-c)^{2} + y^{2}} $$</p>
+<p class=contents_text>After squaring both sites again and rewrite symbols</p>
+<p>$$x^{2}(a^{2} - c^{2}) + a^{2}y^{2} = a^{2}(a^{2}-c^{2}) $$</p>
+<p class=contents_text>Using substitution \(b^{2} = a^{2} - c^{2}\) and dividing both sides
+    by \(a^{2}b^{2}\) we get:</p>
+<p class=number>\begin{equation} \label{eq:K2} \frac{x^{2}}{a^{2}} + \frac{y^{2}}{b^{2}} = 1 \end{equation}</p>
+<p class=contents_text>Where variable \(a\) is named semi-major axis and \(b\) is named
+    semi-minor axis.</p>
+<p>&nbsp;</p>
+<img src="images/keppler_polar_ellipse.png"/>
+<p class=contents_text><b>Ecllipse polar coordinates</b></p>
+<p class=contents_text>In polar coordinates we can derive the pattern for distance \(r\)
+    between focus point \(F\) and position of object on elipse \(P\). Using cosines law for
+    triangle \(\bigtriangleup F'PF\) we can write equation for side \(r'\) with opposite corner angle
+    \(180^{\circ}-\theta\).</p>
+<p>$$r'^{2} = r^{2} + (2ae)^{2} - 2r(2ae)cos(\pi-\theta)$$</p>
+<p class=contents_text>Considering \eqref{eq:K1}, that is:</p>
+<p>$$r' + r = 2a$$</p>
+<p>$$\rightarrow r'^{2} = (2a -r)^{2}$$</p>
+<p class=contents_text>We can write abowe equation</p>
+<p>$$(2a -r)^{2} = r^{2} + (2ae)^{2} - 2r(2ae)cos(\pi-\theta)$$</p>
+<p>$$\rightarrow r'^{2} = (2a -r)^{2}$$</p>
+<p class=contents_text>After getting squared and grouping the similar variables we get:</p>
+<p>$$-4ar + 4arecos(\pi-\theta) = 4a^{2}e^{2} - 4a^{2}$$</p>
+<p class=contents_text>dividing this by 4 and solving for \(r\) we get:</p>
+<p>$$r = \frac{a^{2}(e^{2}-1)}{a(ecos(\pi-\theta)-1)}$$</p>
+<p class=contents_text>Cosine in this angular range is negative. By multiplign abowe and
+    down divider value by (-1) we get:</p>
+<p class=number>\begin{equation} \label{eq:K3} r = \frac{a(1-e^{2})}{1+ecos(\theta)}\end{equation}</p>
+<p>&nbsp;</p>
+<p class=contents_text><b>Ecllipse heliocentric coordinates</b></p>
+<p class=contents_text>Using heliocentric coordinates system we can describle elipse with
+    new parameters eccentricity \(e\) and semi-latus rectum \(p\).</p>
+<img src="images/keppler_coordinates.png"/>
+<p class=number>\begin{equation} \label{eq:K4} e = \frac{c}{a}\end{equation}</p>
+<p class=number>\begin{equation} \label{eq:K5} p = \frac{b^{2}}{a}\end{equation}</p>
+<p>$$r_{min} = \frac{p}{1+e}$$</p>
+<p>$$r_{max} = \frac{p}{1-e}$$</p>
+<p class=contents_text>Equation for eccentricity \eqref{eq:K4} can by described by values
+    \(a\) and \(b\):</p>
+<p>$$e^{2} = \frac{c^{2}}{a^{2}}$$</p>
+<p>$$where \quad c^{2} = a^{2} - b^{2}$$</p>
+<p>$$\rightarrow e = \sqrt{1-\frac{b^{2}}{a^{2}}}$$</p>
+<p class=contents_text>Equation for eccentricity \eqref{eq:K5} can by described by values
+    \(a\) and \(e\):</p>
+<p>$$p = \frac{a^{2}-c^{2}}{a} = a-\frac{c^{2}}{a}$$</p>
+<p class=contents_text>Considering \eqref{eq:K4} we get:</p>
+<p>$$p = a-ae^{2} = a(1-e^{2})$$</p>
+<p class=contents_text>Substitute abowe to \eqref{eq:K3} we get final Keppler equation:</p>
+<p class=number>\begin{equation} \label{eq:K6} r = \frac{p}{1+ecos(\theta)}\end{equation}</p>
+<p class=contents_text>Keppler's equation for planetary elliptical orbits gives distance \(r\) to
+    orbiting object \(P\) from focal point \(F\) by using below variables:</p>
+<p class=contents_text>r - radial distance</p>
+<p class=contents_text>p - semi-latus rectum</p>
+<p class=contents_text>e - eccentricity</p>
+<p class=contents_text>\(\theta\) - true anomaly</p>
+</div>
+
+
+<div id="page-wrap">
+<br id=second_law>
+&nbsp
+<p class=title_text>Second equation of motion</p>
+
+</div>
+
+
+<a href="keppler.html" class="float_top">
+<i class="fa fa-angle-up my-float"></i>
+</a>
+<div class="label-container">
+<div class="label-text">Home</div>
+</div>
+
+<a href="scientists.html" class="float_main">
+<i class="fa fa-angle-left my-float"></i>
+</a>
+<div class="label-container">
+<div class="label-text">Home</div>
+</div>
+
+<a href="index.html" class="float_home">
+<i class="fa fa-home my-float"></i>
+</a>
+<div class="label-container">
+<div class="label-text">Home</div>
+</div>
+
+</body>
+</thml>
